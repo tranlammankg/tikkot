@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+  <html lang="en">
+  <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bơ &amp; Mia Content Poster</title>
+  <style>
+  :root{--paper:#F1EEE6;--paper-panel:#E8E2D3;--ink:#2A2620;--ink-soft:#5B5648;--line:#DCD3C1;--accent:#2E3F5C;--accent-soft:#DCE2EA;--link:#2E3F5C;--code-bg:#26221C;--code-ink:#F1EEE6;}
+  @media (prefers-color-scheme: dark){:root:not([data-theme="light"]){--paper:#1B1914;--paper-panel:#242019;--ink:#EDE8DC;--ink-soft:#B7AF9C;--line:#3A3529;--accent:#8FA6CC;--accent-soft:#2A3547;--link:#9FB3D6;--code-bg:#0F0E0B;--code-ink:#EDE8DC;}}
+  :root[data-theme="dark"]{--paper:#1B1914;--paper-panel:#242019;--ink:#EDE8DC;--ink-soft:#B7AF9C;--line:#3A3529;--accent:#8FA6CC;--accent-soft:#2A3547;--link:#9FB3D6;--code-bg:#0F0E0B;--code-ink:#EDE8DC;}
+  *{box-sizing:border-box;}
+body{margin:0;background:var(--paper);color:var(--ink);font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased;}
+  a{color:var(--link);}
+a:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+.mono{font-family:"IBM Plex Mono", ui-monospace, monospace; letter-spacing:.04em;}
+.wrap{max-width:760px; margin:0 auto; padding:64px 24px 96px;}
+header.masthead{display:flex; align-items:center; gap:10px; padding-bottom:28px; border-bottom:1px solid var(--line); margin-bottom:40px;}
+header.masthead span.brand-name{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--ink-soft);}
+h1{font-family:"Fraunces", ui-serif, Georgia, serif; font-weight:600; font-size:clamp(32px,5vw,44px); line-height:1.1; margin:0 0 14px;}
+.tagline{color:var(--ink-soft); font-size:18px; margin:0 0 40px; max-width:56ch;}
+.callout{background:var(--paper-panel); border:1px solid var(--line); border-left:3px solid var(--accent); border-radius:6px; padding:20px 22px; margin:0 0 40px; font-size:15px; color:var(--ink-soft);}
+.callout b{color:var(--ink);}
+section{margin-bottom:36px;}
+  h2{font-family:"IBM Plex Mono", ui-monospace, monospace; font-size:13px; letter-spacing:.08em; text-transform:uppercase; color:var(--accent); margin:0 0 12px;}
+ul{margin:0; padding-left:20px;}
+li{margin-bottom:6px;}
+  .links{display:flex; flex-wrap:wrap; gap:12px; margin-top:8px;}
+.links a{display:inline-block; padding:9px 16px; border:1px solid var(--line); border-radius:6px; text-decoration:none; font-size:14px; color:var(--ink); background:var(--paper-panel);}
+.links a:hover{border-color:var(--accent);}
+footer{margin-top:56px; padding-top:24px; border-top:1px solid var(--line); font-size:13px; color:var(--ink-soft);}
+footer a{color:var(--ink-soft);}
+</style>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class="wrap">
+  <header class="masthead">
+  <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+  <path d="M12 21c-3.6-2.6-7-5.1-7-8.6C5 9.9 6.8 8 9.2 8c1.2 0 2.2.5 2.8 1.4C12.6 8.5 13.6 8 14.8 8c2.4 0 4.2 1.9 4.2 4.4 0 3.5-3.4 6-7 8.6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="color:var(--ink)"/>
+  <circle cx="8.4" cy="5.6" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+  <circle cx="12" cy="4.4" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+  <circle cx="15.6" cy="5.6" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+  </svg>
+  <span class="brand-name">Bơ &amp; Mia Content Poster</span>
+  </header>
+  <h1>A personal publishing tool for one animated cat couple.</h1>
+<p class="tagline">Bơ &amp; Mia Content Poster is a single-account app that uploads the developer's own animated short videos to the developer's own TikTok account through TikTok's Content Posting API.</p>
+<div class="callout"><b>Not a public service.</b> This app has no sign-up, no other users, and no interface offered to third parties. It exists to automate one creator's own publishing workflow for one TikTok account.</div>
+  <section>
+  <h2>What it does</h2>
+<ul>
+<li>Connects, via TikTok OAuth, to the developer's own TikTok account only.</li>
+  <li>Uploads pre-made video files (with caption and cover image) using the Content Posting API.</li>
+  <li>Runs on a schedule the developer controls no public dashboard, no bot replies, no automated engagement.</li>
+</ul>
+</section>
+  <section>
+  <h2>About the series</h2>
+<p style="margin:0; color:var(--ink-soft);">Bơ &amp; Mia is an original animated 3D short-video series following two cats Bơ (protective, a little clumsy) and Mia (playful, quick-witted) through daily life together. Episodes are produced by the developer and published under this app.</p>
+</section>
+<section>
+<h2>Legal &amp; contact</h2>
+<div class="links">
+<a href="./terms-of-service.html">Terms of Service</a>
+<a href="./privacy-policy.html">Privacy Policy</a>
+<a href="mailto:tranlammankg@gmail.com">tranlammankg@gmail.com</a>
+</div>
+</section>
+<footer>Bơ &amp; Mia Content Poster Personal project <a href="mailto:tranlammankg@gmail.com">tranlammankg@gmail.com</a></footer>
+</div>
+</body>
+</html>
