@@ -1,0 +1,341 @@
+<title>Bơ &amp; Mia Privacy Policy</title>
+<style>
+  :root{
+    --paper:#F1EEE6;
+    --paper-panel:#E8E2D3;
+    --ink:#2A2620;
+    --ink-soft:#5B5648;
+    --line:#DCD3C1;
+    --accent:#B5626C;
+    --accent-soft:#F1DEDF;
+    --link:#A24E58;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#1B1914;
+      --paper-panel:#242019;
+      --ink:#EDE8DC;
+      --ink-soft:#B7AF9C;
+      --line:#3A3529;
+      --accent:#E2A0A6;
+      --accent-soft:#3A2529;
+      --link:#E6ADB2;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#1B1914;
+    --paper-panel:#242019;
+    --ink:#EDE8DC;
+    --ink-soft:#B7AF9C;
+    --line:#3A3529;
+    --accent:#E2A0A6;
+    --accent-soft:#3A2529;
+    --link:#E6ADB2;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+
+  header.masthead{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+    padding-bottom:28px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:40px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .brand svg{width:22px;height:22px;flex:none;}
+  .brand-name{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .doctype{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:4px 10px;
+    border-radius:3px;
+  }
+  h1.title{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(2rem, 4vw, 2.9rem);
+    line-height:1.08;
+    margin:14px 0 10px;
+    text-wrap:balance;
+  }
+  .meta-row{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    letter-spacing:.03em;
+  }
+  .meta-row span b{color:var(--ink); font-weight:600;}
+
+  .layout{
+    display:grid;
+    grid-template-columns:220px minmax(0,1fr);
+    gap:56px;
+    align-items:start;
+  }
+  @media (max-width: 860px){
+    .layout{grid-template-columns:1fr;}
+    nav.toc{position:static !important; order:2;}
+  }
+
+  nav.toc{
+    position:sticky;
+    top:32px;
+  }
+  nav.toc .toc-label{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:12px;
+  }
+  nav.toc ol{
+    list-style:none;
+    margin:0; padding:0;
+    display:flex; flex-direction:column; gap:9px;
+  }
+  nav.toc a{
+    display:flex; gap:10px;
+    text-decoration:none;
+    color:var(--ink-soft);
+    font-size:13.5px;
+    line-height:1.4;
+  }
+  nav.toc a:hover{color:var(--ink);}
+  nav.toc .n{
+    font-family:"IBM Plex Mono", monospace;
+    color:var(--accent);
+    flex:none;
+    width:1.6em;
+  }
+
+  main{max-width:66ch;}
+  main p, main li{color:var(--ink); font-size:15.5px;}
+  main p{margin:0 0 16px;}
+  main ul, main ol.body-list{margin:0 0 16px; padding-left:1.3em;}
+  main li{margin-bottom:6px;}
+
+  section.sec{
+    padding-top:6px;
+    margin-bottom:38px;
+    scroll-margin-top:28px;
+  }
+  section.sec h2{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:1.35rem;
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin:0 0 14px;
+  }
+  section.sec h2 .n{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.85rem;
+    color:var(--accent);
+  }
+
+  table.data{
+    width:100%;
+    border-collapse:collapse;
+    margin:0 0 32px;
+    font-size:14px;
+  }
+  table.data th, table.data td{
+    text-align:left;
+    padding:10px 12px;
+    border-bottom:1px solid var(--line);
+    vertical-align:top;
+  }
+  table.data th{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    letter-spacing:.08em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    font-weight:500;
+  }
+  .data-wrap{overflow-x:auto; margin-bottom:32px;}
+  .data-wrap table{margin-bottom:0;}
+
+  .callout{
+    background:var(--paper-panel);
+    border:1px solid var(--line);
+    border-left:3px solid var(--accent);
+    border-radius:4px;
+    padding:16px 18px;
+    margin:0 0 32px;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  .callout b{color:var(--ink);}
+
+  footer{
+    margin-top:48px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  footer a{color:var(--ink-soft);}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 21c-3.6-2.6-7-5.1-7-8.6C5 9.9 6.8 8 9.2 8c1.2 0 2.2.5 2.8 1.4C12.6 8.5 13.6 8 14.8 8c2.4 0 4.2 1.9 4.2 4.4 0 3.5-3.4 6-7 8.6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="color:var(--ink)"/>
+          <circle cx="8.4" cy="5.6" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+          <circle cx="12" cy="4.4" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+          <circle cx="15.6" cy="5.6" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+        </svg>
+        <span class="brand-name">Bơ &amp; Mia Content Poster</span>
+      </div>
+      <h1 class="title">Privacy Policy</h1>
+      <div class="meta-row">
+        <span>Effective: <b>September 9, 2026</b></span>
+        <span>Version: <b>1.0</b></span>
+        <span>Contact: <b>tranlammankg@gmail.com</b></span>
+      </div>
+    </div>
+    <span class="doctype">Legal · App Review Document</span>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-label">On this page</div>
+      <ol>
+        <li><a href="#overview"><span class="n">01</span>Overview</a></li>
+        <li><a href="#data-we-access"><span class="n">02</span>Data we access</a></li>
+        <li><a href="#data-we-dont"><span class="n">03</span>What we don't collect</a></li>
+        <li><a href="#how-used"><span class="n">04</span>How data is used</a></li>
+        <li><a href="#storage"><span class="n">05</span>Storage &amp; retention</a></li>
+        <li><a href="#sharing"><span class="n">06</span>Sharing with third parties</a></li>
+        <li><a href="#your-rights"><span class="n">07</span>Your rights</a></li>
+        <li><a href="#changes"><span class="n">08</span>Changes to this policy</a></li>
+        <li><a href="#contact"><span class="n">09</span>Contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <div class="callout">
+        <b>In plain terms:</b> Bơ &amp; Mia Content Poster only ever connects to one TikTok account — the Developer's own. It doesn't have other users, doesn't run ads or trackers, and doesn't sell or share data. The only data it touches is what's needed to publish the Developer's own videos.
+      </div>
+
+      <section class="sec" id="overview">
+        <h2><span class="n">01</span>Overview</h2>
+        <p>This Privacy Policy explains what data Bơ &amp; Mia Content Poster (the "App") accesses when it uses TikTok's Content Posting API, and how that data is handled. The App is a single-account personal tool built and operated by an individual creator (the "Developer") solely to publish the Developer's own animated video content to the Developer's own TikTok account.</p>
+      </section>
+
+      <section class="sec" id="data-we-access">
+        <h2><span class="n">02</span>Data we access</h2>
+        <div class="data-wrap">
+          <table class="data">
+            <thead>
+              <tr><th>Data</th><th>Why</th></tr>
+            </thead>
+            <tbody>
+              <tr><td>TikTok OAuth access token (<code>video.publish</code> scope)</td><td>Authorizes the App to publish video posts to the Developer's own TikTok account.</td></tr>
+              <tr><td>Basic TikTok account identifiers (username, account ID) returned by the API</td><td>Confirms which account a post is being published to.</td></tr>
+              <tr><td>Video files, captions, and cover images created by the Developer</td><td>The actual content being uploaded and published.</td></tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <section class="sec" id="data-we-dont">
+        <h2><span class="n">03</span>What we don't collect</h2>
+        <ul>
+          <li>No accounts, sign-ups, or data from any user other than the Developer.</li>
+          <li>No analytics, tracking pixels, or advertising identifiers.</li>
+          <li>No browsing history, device data, or location data.</li>
+          <li>No access to TikTok direct messages, followers' data, or other accounts' content.</li>
+        </ul>
+      </section>
+
+      <section class="sec" id="how-used">
+        <h2><span class="n">04</span>How data is used</h2>
+        <p>The OAuth token and account identifiers are used exclusively to authenticate API requests and confirm a post is going to the correct, Developer-owned account. Video files, captions, and cover images are used exclusively to create the post the Developer has reviewed and approved. None of this data is used for any other purpose, such as profiling, advertising, or analytics.</p>
+      </section>
+
+      <section class="sec" id="storage">
+        <h2><span class="n">05</span>Storage &amp; retention</h2>
+        <p>Access tokens are stored only for as long as needed to operate the App and are kept confidential. Video files are held only for the time needed to prepare and publish a post, then removed from any temporary working storage. The App does not maintain a public-facing database of user data, because it has no users other than the Developer.</p>
+      </section>
+
+      <section class="sec" id="sharing">
+        <h2><span class="n">06</span>Sharing with third parties</h2>
+        <p>Data is not sold, rented, or shared with third parties. The only external service the App communicates with is TikTok's own API, for the sole purpose of publishing the Developer's posts, governed by <a href="https://www.tiktok.com/legal/page/row/privacy-policy/en" target="_blank" rel="noopener">TikTok's own Privacy Policy</a>.</p>
+      </section>
+
+      <section class="sec" id="your-rights">
+        <h2><span class="n">07</span>Your rights</h2>
+        <p>Because the App has no third-party users, the data described here belongs to the Developer alone. The Developer can revoke the App's access at any time from TikTok's account settings, which immediately invalidates the App's ability to post or access account data.</p>
+      </section>
+
+      <section class="sec" id="changes">
+        <h2><span class="n">08</span>Changes to this policy</h2>
+        <p>This document may be updated as the App's functionality changes. The version number and effective date above will be updated whenever a material change is made.</p>
+      </section>
+
+      <section class="sec" id="contact">
+        <h2><span class="n">09</span>Contact</h2>
+        <p>Questions about this Privacy Policy can be sent to <a href="mailto:tranlammankg@gmail.com">tranlammankg@gmail.com</a>.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <span>Bơ &amp; Mia Content Poster — Privacy Policy</span>
+    <span>See also: <a href="https://claude.ai/code/artifact/bd22d1e9-f9c8-407e-a9e2-0c8bbf3fc284" target="_blank" rel="noopener">Terms of Service</a></span>
+  </footer>
+
+</div>

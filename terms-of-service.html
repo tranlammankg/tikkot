@@ -1,0 +1,321 @@
+<title>Bơ &amp; Mia Terms of Service</title>
+<style>
+  :root{
+    --paper:#F1EEE6;
+    --paper-panel:#E8E2D3;
+    --ink:#2A2620;
+    --ink-soft:#5B5648;
+    --line:#DCD3C1;
+    --accent:#2E3F5C;
+    --accent-soft:#DCE2EA;
+    --link:#2E3F5C;
+    --code-bg:#26221C;
+    --code-ink:#F1EEE6;
+  }
+  @media (prefers-color-scheme: dark){
+    :root:not([data-theme="light"]){
+      --paper:#1B1914;
+      --paper-panel:#242019;
+      --ink:#EDE8DC;
+      --ink-soft:#B7AF9C;
+      --line:#3A3529;
+      --accent:#8FA6CC;
+      --accent-soft:#2A3547;
+      --link:#9FB3D6;
+      --code-bg:#0F0E0B;
+      --code-ink:#EDE8DC;
+    }
+  }
+  :root[data-theme="dark"]{
+    --paper:#1B1914;
+    --paper-panel:#242019;
+    --ink:#EDE8DC;
+    --ink-soft:#B7AF9C;
+    --line:#3A3529;
+    --accent:#8FA6CC;
+    --accent-soft:#2A3547;
+    --link:#9FB3D6;
+    --code-bg:#0F0E0B;
+    --code-ink:#EDE8DC;
+  }
+
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper);
+    color:var(--ink);
+    font-family:"IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+    font-size:16px;
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+  }
+  a{color:var(--link);}
+  a:focus-visible, button:focus-visible{outline:2px solid var(--accent); outline-offset:2px;}
+
+  .mono{
+    font-family:"IBM Plex Mono", ui-monospace, monospace;
+    letter-spacing:.04em;
+  }
+
+  .wrap{
+    max-width:1180px;
+    margin:0 auto;
+    padding:56px 24px 96px;
+  }
+
+  header.masthead{
+    display:flex;
+    align-items:flex-start;
+    justify-content:space-between;
+    gap:24px;
+    flex-wrap:wrap;
+    padding-bottom:28px;
+    border-bottom:1px solid var(--line);
+    margin-bottom:40px;
+  }
+  .brand{
+    display:flex;
+    align-items:center;
+    gap:10px;
+  }
+  .brand svg{width:22px;height:22px;flex:none;}
+  .brand-name{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+  }
+  .doctype{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11.5px;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--accent);
+    background:var(--accent-soft);
+    padding:4px 10px;
+    border-radius:3px;
+  }
+  h1.title{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:clamp(2rem, 4vw, 2.9rem);
+    line-height:1.08;
+    margin:14px 0 10px;
+    text-wrap:balance;
+  }
+  .meta-row{
+    display:flex;
+    gap:18px;
+    flex-wrap:wrap;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12.5px;
+    color:var(--ink-soft);
+    letter-spacing:.03em;
+  }
+  .meta-row span b{color:var(--ink); font-weight:600;}
+
+  .layout{
+    display:grid;
+    grid-template-columns:220px minmax(0,1fr);
+    gap:56px;
+    align-items:start;
+  }
+  @media (max-width: 860px){
+    .layout{grid-template-columns:1fr;}
+    nav.toc{position:static !important; order:2;}
+  }
+
+  nav.toc{
+    position:sticky;
+    top:32px;
+  }
+  nav.toc .toc-label{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:11px;
+    letter-spacing:.14em;
+    text-transform:uppercase;
+    color:var(--ink-soft);
+    margin-bottom:12px;
+  }
+  nav.toc ol{
+    list-style:none;
+    margin:0; padding:0;
+    display:flex; flex-direction:column; gap:9px;
+  }
+  nav.toc a{
+    display:flex; gap:10px;
+    text-decoration:none;
+    color:var(--ink-soft);
+    font-size:13.5px;
+    line-height:1.4;
+  }
+  nav.toc a:hover{color:var(--ink);}
+  nav.toc .n{
+    font-family:"IBM Plex Mono", monospace;
+    color:var(--accent);
+    flex:none;
+    width:1.6em;
+  }
+
+  main{max-width:66ch;}
+  main p, main li{color:var(--ink); font-size:15.5px;}
+  main p{margin:0 0 16px;}
+  main ul, main ol.body-list{margin:0 0 16px; padding-left:1.3em;}
+  main li{margin-bottom:6px;}
+
+  section.sec{
+    padding-top:6px;
+    margin-bottom:38px;
+    scroll-margin-top:28px;
+  }
+  section.sec h2{
+    font-family:"Fraunces", Georgia, serif;
+    font-weight:600;
+    font-size:1.35rem;
+    display:flex;
+    align-items:baseline;
+    gap:12px;
+    margin:0 0 14px;
+  }
+  section.sec h2 .n{
+    font-family:"IBM Plex Mono", monospace;
+    font-size:.85rem;
+    color:var(--accent);
+  }
+
+  .callout{
+    background:var(--paper-panel);
+    border:1px solid var(--line);
+    border-left:3px solid var(--accent);
+    border-radius:4px;
+    padding:16px 18px;
+    margin:0 0 32px;
+    font-size:14px;
+    color:var(--ink-soft);
+  }
+  .callout b{color:var(--ink);}
+
+  footer{
+    margin-top:48px;
+    padding-top:24px;
+    border-top:1px solid var(--line);
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:12px;
+    font-family:"IBM Plex Mono", monospace;
+    font-size:12px;
+    color:var(--ink-soft);
+  }
+  footer a{color:var(--ink-soft);}
+</style>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=IBM+Plex+Mono:wght@400;500&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+
+<div class="wrap">
+
+  <header class="masthead">
+    <div>
+      <div class="brand">
+        <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <path d="M12 21c-3.6-2.6-7-5.1-7-8.6C5 9.9 6.8 8 9.2 8c1.2 0 2.2.5 2.8 1.4C12.6 8.5 13.6 8 14.8 8c2.4 0 4.2 1.9 4.2 4.4 0 3.5-3.4 6-7 8.6Z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round" style="color:var(--ink)"/>
+          <circle cx="8.4" cy="5.6" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+          <circle cx="12" cy="4.4" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+          <circle cx="15.6" cy="5.6" r="1.15" fill="currentColor" style="color:var(--accent)"/>
+        </svg>
+        <span class="brand-name">Bơ &amp; Mia Content Poster</span>
+      </div>
+      <h1 class="title">Terms of Service</h1>
+      <div class="meta-row">
+        <span>Effective: <b>September 9, 2026</b></span>
+        <span>Version: <b>1.0</b></span>
+        <span>Contact: <b>tranlammankg@gmail.com</b></span>
+      </div>
+    </div>
+    <span class="doctype">Legal · App Review Document</span>
+  </header>
+
+  <div class="layout">
+    <nav class="toc" aria-label="Table of contents">
+      <div class="toc-label">On this page</div>
+      <ol>
+        <li><a href="#what-this-is"><span class="n">01</span>What this is</a></li>
+        <li><a href="#who-can-use"><span class="n">02</span>Who can use it</a></li>
+        <li><a href="#tiktok-relationship"><span class="n">03</span>Relationship to TikTok</a></li>
+        <li><a href="#content"><span class="n">04</span>Content &amp; disclosure</a></li>
+        <li><a href="#acceptable-use"><span class="n">05</span>Acceptable use</a></li>
+        <li><a href="#no-warranty"><span class="n">06</span>No warranty</a></li>
+        <li><a href="#liability"><span class="n">07</span>Liability</a></li>
+        <li><a href="#changes"><span class="n">08</span>Changes to these terms</a></li>
+        <li><a href="#contact"><span class="n">09</span>Contact</a></li>
+      </ol>
+    </nav>
+
+    <main>
+      <div class="callout">
+        <b>In plain terms:</b> Bơ &amp; Mia Content Poster is a single-user tool built by one independent creator to publish their own original animated short videos to their own TikTok account through TikTok's Content Posting API. It is not offered as a service to the public and does not post on behalf of anyone else.
+      </div>
+
+      <section class="sec" id="what-this-is">
+        <h2><span class="n">01</span>What this is</h2>
+        <p>Bơ &amp; Mia Content Poster ("the App") is a personal content-publishing tool developed and operated by an individual creator (the "Developer") for the "Bơ &amp; Mia" animated short-video series. The App uses TikTok's Content Posting API to upload video files, together with a caption and cover image, to the Developer's own connected TikTok account.</p>
+        <p>The App is a private, single-account automation tool. It has no public sign-up, no other user accounts, and no interface offered to third parties.</p>
+      </section>
+
+      <section class="sec" id="who-can-use">
+        <h2><span class="n">02</span>Who can use it</h2>
+        <p>The App is used exclusively by the Developer, for the Developer's own TikTok account. It is not distributed, licensed, or made available to other individuals or organizations. If that changes in the future, this document will be updated before any wider release.</p>
+      </section>
+
+      <section class="sec" id="tiktok-relationship">
+        <h2><span class="n">03</span>Relationship to TikTok</h2>
+        <p>The App is an independent, third-party client of TikTok's public developer platform. It is not created by, affiliated with, maintained by, or endorsed by TikTok Inc. or ByteDance Ltd. "TikTok" and related marks belong to their respective owners.</p>
+        <p>Use of the App is always subject to TikTok's own <a href="https://www.tiktok.com/legal/page/row/terms-of-service/en" target="_blank" rel="noopener">Terms of Service</a>, <a href="https://www.tiktok.com/community-guidelines" target="_blank" rel="noopener">Community Guidelines</a>, and <a href="https://developers.tiktok.com/doc/content-sharing-guidelines" target="_blank" rel="noopener">Developer content-sharing guidelines</a>, which take precedence over anything in this document.</p>
+      </section>
+
+      <section class="sec" id="content">
+        <h2><span class="n">04</span>Content &amp; disclosure</h2>
+        <p>All video content posted through the App is original animated content created for the Bơ &amp; Mia series, generated with AI creative tools and reviewed by the Developer before publishing. Every post goes through a preview step where the Developer can review, edit the caption/cover, and confirm before it is published — the App does not publish silently without that confirmation.</p>
+        <p>Where required by TikTok's policies, posts are labeled to disclose that they contain AI-generated or AI-assisted content.</p>
+      </section>
+
+      <section class="sec" id="acceptable-use">
+        <h2><span class="n">05</span>Acceptable use</h2>
+        <ol class="body-list">
+          <li>The App will only be used to post content the Developer owns or has the rights to publish.</li>
+          <li>The App will not be used to copy, repost, or redistribute content originating from other creators or platforms.</li>
+          <li>The App will not be used to spam, mislead, or post content that violates TikTok's Community Guidelines.</li>
+          <li>Authentication credentials (API keys, OAuth tokens) are kept confidential and are not shared with third parties.</li>
+        </ol>
+      </section>
+
+      <section class="sec" id="no-warranty">
+        <h2><span class="n">06</span>No warranty</h2>
+        <p>The App is provided "as is," without warranty of any kind, express or implied, including but not limited to fitness for a particular purpose or uninterrupted availability. Posting is dependent on TikTok's own platform and API availability, which is outside the Developer's control.</p>
+      </section>
+
+      <section class="sec" id="liability">
+        <h2><span class="n">07</span>Liability</h2>
+        <p>To the extent permitted by law, the Developer is not liable for indirect, incidental, or consequential damages arising from use of the App, including account actions taken by TikTok as a result of posted content.</p>
+      </section>
+
+      <section class="sec" id="changes">
+        <h2><span class="n">08</span>Changes to these terms</h2>
+        <p>This document may be updated as the App's functionality changes. The version number and effective date above will be updated whenever a material change is made.</p>
+      </section>
+
+      <section class="sec" id="contact">
+        <h2><span class="n">09</span>Contact</h2>
+        <p>Questions about these Terms can be sent to <a href="mailto:tranlammankg@gmail.com">tranlammankg@gmail.com</a>.</p>
+      </section>
+    </main>
+  </div>
+
+  <footer>
+    <span>Bơ &amp; Mia Content Poster — Terms of Service</span>
+    <span>See also: <a href="https://claude.ai/code/artifact/561f2db3-3924-4d43-a87b-fc21f4638a2f" target="_blank" rel="noopener">Privacy Policy</a></span>
+  </footer>
+
+</div>
